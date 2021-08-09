@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" id="pagestyle" href="./stylesheets/styles.css">
     <title>Covid</title>
 </head>
 
 <body>
-    <div class="HEAD">
+    <div class="HEAD" id="mode">
         <label class="Icon">COVID</label>
         <ul class="nav">
-            <li><a class="active" href="index.html" onmouseover="f()" onmouseleave="leave()">What is Covid?</a></li>
+            <li><a class="active" href="index.html">What is Covid?</a></li>
             <li><a class="a" href="data.html">Data</a></li>
             <li><a class="a" href="call.html">Call Centers</a></li>
             <li><a class="a" href="social.html">Social</a></li>
+            <li><a class="a" id="stylesheet1" href="#" onclick="mode()">Mode</a></li>
         </ul>
     </div>
-    <div class="Info">
+    <div class="Info" id="mode_2">
         <h1>WHAT IS COVID</h1>
         <p>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus
             (nCoV) is a new strain that has not been previously identified in humans.</p>
@@ -30,7 +31,7 @@
             as coughing and sneezing.</p>
     </div>
     <footer class="foot">
-        <p>2021 Copyright.</p>
+        <p id="mode_3">2021 Copyright.</p>
     </footer>
     <script src="./JS/index.js"></script>
 </body>
