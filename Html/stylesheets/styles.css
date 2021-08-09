@@ -59,6 +59,7 @@ a.active {
 
 .Info p {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
     text-align: center;
     padding: 25px 200px;
 }
