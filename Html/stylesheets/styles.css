@@ -35,6 +35,10 @@ body {
     margin: 0 5px;
 }
 
+.nav .show {
+    display: none;
+}
+
 a {
     color: white;
     font-weight: 300;
@@ -48,6 +52,31 @@ a {
 a:hover,
 a.active {
     background-color: #5cbef3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .Info {
@@ -79,8 +108,26 @@ a.active {
 }
 
 @media screen and (max-width:870px) {
-    .nav li {
+    .nav .one {
         display: none;
+    }
+    .nav .two {
+        display: none;
+    }
+    .nav .three {
+        display: none;
+    }
+    .nav .four {
+        display: none;
+    }
+    .nav .five {
+        display: none;
+    }
+    .nav .six {
+        display: none;
+    }
+    .nav .show {
+        display: inline-block;
     }
     .Info {
         height: 500px;
@@ -109,8 +156,8 @@ a.active {
 }
 
 @media screen and (max-width:480px) and (max-width:870px) {
-    .nav li {
-        display: none;
+    .nav .bar {
+        display: block;
     }
     .Info {
         height: 700px;
