@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .HEAD {
     background-color: #A2DBFA;
     height: 80px;
-    width: 100%;
 }
 
 .Icon {
@@ -48,13 +51,13 @@ a.active {
 }
 
 .Info {
-    background-color: #E8F0F2;
-    height: 500px;
-    width: 100%;
+    background-color: #d8dbdb;
+    height: 600px;
 }
 
 .Info h1 {
-    padding: 10px 500px;
+    text-align: center;
+    padding: 10px;
 }
 
 .Info p {
@@ -70,6 +73,67 @@ a.active {
 }
 
 .foot p {
+    text-align: center;
     background-color: #afb6b8;
-    padding: 35px 550px;
+    padding: 35px;
+}
+
+@media screen and (max-width:870px) {
+    .nav li {
+        display: none;
+    }
+    .Info {
+        height: 500px;
+    }
+    .Info h1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        line-height: 100px;
+    }
+    .Info p {
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .foot {
+        height: 70px;
+    }
+    .foot p {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:480px) and (max-width:870px) {
+    .nav li {
+        display: none;
+    }
+    .Info {
+        height: 700px;
+    }
+    .Info h1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        line-height: 100px;
+    }
+    .Info p {
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .foot {
+        height: 50px;
+    }
+    .foot p {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+        height: 50px;
+    }
 }
