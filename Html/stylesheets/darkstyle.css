@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .HEAD {
     background-color: #1F1B24;
     height: 80px;
-    width: 100%;
 }
 
 .Icon {
@@ -32,6 +35,10 @@
     margin: 0 5px;
 }
 
+.nav .show {
+    display: none;
+}
+
 a {
     color: white;
     font-weight: 300;
@@ -47,15 +54,40 @@ a.active {
     background-color: #0f0b0b;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F1B24;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 20px 20px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .Info {
     background-color: #121212;
     color: white;
-    height: 500px;
-    width: 100%;
+    height: 600px;
 }
 
 .Info h1 {
-    padding: 10px 500px;
+    text-align: center;
+    padding: 10px;
 }
 
 .Info p {
@@ -70,7 +102,87 @@ a.active {
 }
 
 .foot p {
+    text-align: center;
     background-color: #1F1B24;
     color: white;
-    padding: 35px 550px;
+    padding: 35px;
+}
+
+@media screen and (max-width:870px) {
+    .nav .one {
+        display: none;
+    }
+    .nav .two {
+        display: none;
+    }
+    .nav .three {
+        display: none;
+    }
+    .nav .four {
+        display: none;
+    }
+    .nav .five {
+        display: none;
+    }
+    .nav .six {
+        display: none;
+    }
+    .nav .show {
+        display: inline-block;
+        padding-right: 100px;
+    }
+    .Info {
+        height: 500px;
+    }
+    .Info h1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        line-height: 100px;
+    }
+    .Info p {
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .foot {
+        height: 70px;
+    }
+    .foot p {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:480px) and (max-width:870px) {
+    .nav .bar {
+        display: block;
+    }
+    .Info {
+        height: 700px;
+    }
+    .Info h1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        line-height: 100px;
+    }
+    .Info p {
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .foot {
+        height: 50px;
+    }
+    .foot p {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+        height: 50px;
+    }
 }
